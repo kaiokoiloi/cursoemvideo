@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 250px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>segundo Iframe</h1>
+    <!--
+        Por padrao, os iframes são de 300 por 150 px.
+    -->
+    <p>De uma andada pelo site do <iframe src="https://www.cursoemvideo.com/" frameborder="0">
+        <!--
+            Tudo que estiver no meio das tags iframes, vai ser exibido apenas se o navegador
+            não tiver compatibilidade
+        -->
+        <a href="https://www.youtube.com">youtube</a>
+    </iframe></p>
+
+    <p>Tambem vamos colocar outro site que eu visito com frequencia <iframe src="https://www.youtube.com" frameborder="0" 
+        scolling="auto">
+        <!--
+            scolling: auto. Caso o tamanho do iframe seja maior que a caixa, ele criara uma barra de rolagem
+            scolling: yes. Mesmo se todo o conteudo fosse do tamanha da caoxa, iria aparecer uma barra de rolagem
+            scolling: no. Mesmo se o conteudo fosse maior que a caixa, ele nao ia permitir uma barra de rolagem
+
+
+            frameborder: Ele aceita duas coisa: 0 ou qualquer outra coisa, CASO FOR 0, ELE NAO TERA NENHUMA BORDAR, CASO FOR
+            QUALQYER OUTRA COISA, ELE TERA BORDAR - MAS ACHO MAIS APROPRIADO REALIZARMOS ISSO NAS CSS.
+        -->
+
+    </iframe> </p>
+    
+</body>
+</html>
